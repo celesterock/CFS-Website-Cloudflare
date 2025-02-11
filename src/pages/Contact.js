@@ -84,7 +84,9 @@ function Contact() {
                     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.5)'
                 }}
                 loading="lazy" 
-                allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJk-2A2j4zw4ARseAciVlFfMI&key=AIzaSyATusCVocxg3brXcJVNX_Dvcjbs_sQzdFo">
+                allowfullscreen 
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJk-2A2j4zw4ARseAciVlFfMI&key=AIzaSyATusCVocxg3brXcJVNX_Dvcjbs_sQzdFo"
+                title="Google Maps Location">
             </iframe>
             <form className='contact-form' onSubmit={onSubmit}>
                 <h2>Connect With Us Today!</h2>

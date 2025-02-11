@@ -1,7 +1,6 @@
 {
   "name": "cfs_website",
   "version": "0.1.0",
-  "homepage": "https://celesterock.github.io/CFSWebsite/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
