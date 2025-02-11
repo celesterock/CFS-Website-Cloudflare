@@ -21,7 +21,7 @@ function Navbar() {
             </div>
         </div>
         <div className = "rightSide">
-            <Link to="/CFSWebsite"> Home </Link>
+            <Link to="/"> Home </Link>
             <Link to="/About"> About </Link>
             <Link to="/Contact"> Contact </Link>
             <button onClick={toggleNavbar}>
