@@ -10,9 +10,6 @@ function Home() {
       <div className="headerContainer">
         <h1> Country Farm Supply </h1>
         <p> Everything You Need to Grow </p>
-        <Link to="/products"> {/* Ensure the Link has a 'to' attribute */}
-          <button> VIEW PRODUCTS </button>
-        </Link>
       </div>
     </div>
   );
