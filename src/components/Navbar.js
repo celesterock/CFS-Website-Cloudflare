@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from "../assets/goldlogo.png";
 import {Link} from 'react-router-dom'
 import ReorderIcon from '@mui/icons-material/Reorder';
@@ -9,6 +9,21 @@ function Navbar() {
     const toggleNavbar = () => {
         setOpenLinks(!openLinks);
     };
+
+    // Close menu when re-sizing back to bigger screen
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth > 600) {
+                // close the menu when maximizing
+                setOpenLinks(false); 
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
   return (
     <div className = "navbar">

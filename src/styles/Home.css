@@ -2,6 +2,8 @@
     width: 100%;
     height: 90vh;
     display: flex;
+    padding-top: 80px; /* Makes space for the navbar */
+    padding-bottom: 80px; /* Makes space for the footer */
     justify-content: center;
     align-items: left;
     flex-direction: column;
@@ -36,7 +38,6 @@
   }
   
   .headerContainer h1 {
-
     justify-content: center;
     align-items: center;
     font-size: 100px;
@@ -69,6 +70,10 @@
     cursor: pointer;
     transition: 0.3s ease-in;
   }
+  body {
+    overflow-y: auto; /* Allows full-page scrolling */
+  }
+  
   
   @media only screen and (max-width: 950px) {
     .home {
@@ -86,21 +91,27 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: #795548;
+      background-color: #795548ba;
+
       color: white;
     }
   
     .headerContainer h1 {
-      font-size: 40px;
-      height: 30px;
+      font-size: 9vw;
+      max-width: 100%;
+      height: auto;
       color: antiquewhite;
       text-shadow: none;
+      text-align: center;
     }
   
     .headerContainer p {
-      font-size: 30px;
+      font-size: 7vw;
+      max-width: 90%;
+      height: auto;
       color: antiquewhite;
       text-shadow: none;
+      text-align: center;
     }
   
     .headerContainer button {
