@@ -37,7 +37,7 @@
   }
 
   .navbar a:hover{
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .navbar .rightSide button {
@@ -69,6 +69,16 @@
   
   .navbar #close .hiddenLinks {
     display: none;
+  }
+
+
+  .logo {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(0.9);
   }
 
 

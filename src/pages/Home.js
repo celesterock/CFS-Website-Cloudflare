@@ -8,7 +8,7 @@ function Home() {
       <div className="background-overlay"></div> {/* Overlay addition */}
       <div className="headerContainer">
         <h1> Country Farm Supply </h1>
-        <p> Everything You Need to Grow </p>
+        <p>  Gardening & Agricultural Products </p>
       </div>
     </div>
   );
